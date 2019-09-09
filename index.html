@@ -1,0 +1,114 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>git gud</title>
+
+    	<link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+    	<!-- Theme used for syntax highlighting of code -->
+        <link rel="stylesheet" href="lib/css/monokai.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+	    var link = document.createElement( 'link' );
+	    link.rel = 'stylesheet';
+	    link.type = 'text/css';
+	    link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+	    document.getElementsByTagName( 'head' )[0].appendChild( link );
+        </script>
+    </head>
+    <body>
+        <div class="reveal">
+	    <div class="slides">
+	        <section>
+                    <h1><code>git gud</code></h1>
+                    <p>Look Mom, I did the funny name!</p>
+                    <small>Git for beginners</small>
+                </section>
+	        <section>
+                    <section>
+                        <h1>Git is...</h1>
+                        <ul>
+                            <li class="fragment">version control</li>
+                            <li class="fragment">distributed</li>
+                            <li class="fragment">all over the place</li>
+                            <li class="fragment">not GitHub</li>
+                        </ul>
+                    </section>
+                    <section>
+                        <h2>okay but why do i care</h2>
+                        <ul>
+                            <li class="fragment">Keeps things "in order"</li>
+                            <li class="fragment">Makes collaborating easier</li>
+                            <li class="fragment">
+                                You <em>will</em> work with VCS in your professional life<br>
+                                <small class="fragment">if you don't, you're probably working weird jobs</small>
+                            </li>
+                        </ul>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Essential concepts</h1>
+                    </section>
+                    <section>
+                        <h2>Repository</h2>
+                        <p>A respository essentially stores files and/or the history of those files</p>
+                    </section>
+                    <section>
+                        <img src="https://wac-cdn.atlassian.com/dam/jcr:7406fe56-d36d-44cf-92e3-b28e4bae36f8/02.svg" alt="Git Tutorial: Snapshots, Not Differences" style="float: right; max-width: 525px;">
+                        <h2>Commits</h2>
+                        <p>
+                            Snapshots of files over time<br>
+                            <small class="fragment">... more or less</small>
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <section>
+                        <h1>Getting started</h1>
+                    </section>
+                    <section>
+                        <h2>Install and required config</h2>
+                        <p>
+                            Just install <code>git</code> with your package manager of choice<br>
+                            Then tell <code>git</code> who you are:
+                            <ul class="fragment">
+                                <li><code>git config --global user.name "Your Name Goes Here"</code></li>
+                                <li><code>git config --global user.email "a_good@email.address"</code></li>
+                            </ul>
+                            <span class="fragment">That's it!</span>
+                        </p>
+                    </section>
+                </section>
+                <section>
+                    <h2>Creating a repository</h2>
+                    <ol>
+                        <li><code>cd</code> into your respository-to-be</li>
+                    </ol>
+                </section>
+	    </div>
+        </div>
+
+        <script src="js/reveal.js"></script>
+
+        <script>
+            // More info about config & dependencies:
+            // - https://github.com/hakimel/reveal.js#configuration
+            // - https://github.com/hakimel/reveal.js#dependencies
+            Reveal.initialize({
+                dependencies: [
+                    { src: 'plugin/markdown/marked.js' },
+                    { src: 'plugin/markdown/markdown.js' },
+                    { src: 'plugin/notes/notes.js', async: true },
+                    { src: 'plugin/highlight/highlight.js', async: true }
+                ]
+            });
+        </script>
+    </body>
+</html>
